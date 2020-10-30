@@ -13,6 +13,8 @@
 		6446ECF5254AB051008FFD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6446ECF3254AB051008FFD34 /* Main.storyboard */; };
 		6446ECF7254AB058008FFD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6446ECF6254AB058008FFD34 /* Assets.xcassets */; };
 		6446ECFA254AB058008FFD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6446ECF8254AB058008FFD34 /* LaunchScreen.storyboard */; };
+		6446ED03254AB0A4008FFD34 /* BiometricsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446ED02254AB0A4008FFD34 /* BiometricsUtil.swift */; };
+		6446ED06254AB25F008FFD34 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6446ED05254AB25F008FFD34 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6446ECF6254AB058008FFD34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6446ECF9254AB058008FFD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6446ECFB254AB058008FFD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6446ED02254AB0A4008FFD34 /* BiometricsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricsUtil.swift; sourceTree = "<group>"; };
+		6446ED05254AB25F008FFD34 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6446ED06254AB25F008FFD34 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				6446ECEC254AB051008FFD34 /* BiometricSample */,
 				6446ECEB254AB051008FFD34 /* Products */,
+				6446ED04254AB25E008FFD34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +62,40 @@
 		6446ECEC254AB051008FFD34 /* BiometricSample */ = {
 			isa = PBXGroup;
 			children = (
+				6446ED01254AB085008FFD34 /* BiometricsUtil */,
+				6446ED07254ABF75008FFD34 /* BiometricsSampleCode */,
+				6446ECFB254AB058008FFD34 /* Info.plist */,
+			);
+			path = BiometricSample;
+			sourceTree = "<group>";
+		};
+		6446ED01254AB085008FFD34 /* BiometricsUtil */ = {
+			isa = PBXGroup;
+			children = (
+				6446ED02254AB0A4008FFD34 /* BiometricsUtil.swift */,
+			);
+			path = BiometricsUtil;
+			sourceTree = "<group>";
+		};
+		6446ED04254AB25E008FFD34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6446ED05254AB25F008FFD34 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6446ED07254ABF75008FFD34 /* BiometricsSampleCode */ = {
+			isa = PBXGroup;
+			children = (
 				6446ECED254AB051008FFD34 /* AppDelegate.swift */,
 				6446ECEF254AB051008FFD34 /* SceneDelegate.swift */,
 				6446ECF1254AB051008FFD34 /* ViewController.swift */,
 				6446ECF3254AB051008FFD34 /* Main.storyboard */,
 				6446ECF6254AB058008FFD34 /* Assets.xcassets */,
 				6446ECF8254AB058008FFD34 /* LaunchScreen.storyboard */,
-				6446ECFB254AB058008FFD34 /* Info.plist */,
 			);
-			path = BiometricSample;
+			path = BiometricsSampleCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +171,7 @@
 			files = (
 				6446ECF2254AB051008FFD34 /* ViewController.swift in Sources */,
 				6446ECEE254AB051008FFD34 /* AppDelegate.swift in Sources */,
+				6446ED03254AB0A4008FFD34 /* BiometricsUtil.swift in Sources */,
 				6446ECF0254AB051008FFD34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
